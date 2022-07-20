@@ -1,33 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
+    <style>
+        *{margin: 0;
+        padding: 0;}
+        .bbm{
+            display: block;
+        }
+        .myhead{
+            height: 240px;
+            background: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+      
+        }
+        .mybody{
+            background: #f0f0f0;
+            max-width: 960px;
+            margin: auto;
+
+            padding: 32px 16px;
+        }
+        
+        .content{
+            color: #000;
+            font: 32px;
+        }
+        .foot{
+            background-color:#999999; 
+            height: 200px;
+
+            display: flex;
+            /* 行排列 */
+        flex-direction: column;
+        /* x轴剧中、y轴剧中 */
+        justify-content: center;
+        align-items: center;
+        /* 父集继承给子集，最好加上，防止不居中 */
+            /* text-align: center; */
+
+        }
+
+            
+    </style>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyBlog</title>
 </head>
+
 <body>
     <!-- <p style="color:rgb(33, 181, 214);font-size: 24px;">我是烧鹅</p> -->
 
     <!-- 头部 -->
-    <div style="background-color: rgb(36, 189, 219); height:240px; ">
-    <img src="./头像.jpeg" alt="" style="width: 128px; border-radius:32px">
-
+    <div class="myhead">
+        <img src="./头像.jpeg" alt="" style="width: 128px; border-radius:32px">
     </div>
 
     <!-- 身体 -->
-    <div style="background-color:blanchedalmond;max-width: 960px;margin:auto">
-        <p style="color:rgb(93, 114, 119);font-size: 24px;">我是烧鹅</p>
-        <p style="color:rgb(93, 114, 119);font-size: 24px;">hi!</p>
-        <p style="color:rgb(93, 114, 119);font-size: 24px;">我是烧鹅</p>
-        <p style="color:rgb(93, 114, 119);font-size: 24px;">我是烧鹅</p>
+    <div class="mybody">
+        <p class="content"> hi!</p>
+        <p class="content">我是烧鹅</p>
+        <p class="content">鹅鹅鹅鹅鹅～</p>
     </div>
 
     <!-- 页尾 -->
-    <div style="background-color:#999999; height: 200px;">
-        <p style="text-align: center">这是烧鹅的网站😎</p>
-        <p style="text-align: center">hahaha</p>
+    <div class="foot">
+        <p>这是烧鹅的网站😎</p>
+        <p>hahaha</p>
     </div>
-    
+
 </body>
+
 </html>
